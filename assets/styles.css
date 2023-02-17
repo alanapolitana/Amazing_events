@@ -90,7 +90,7 @@ text-align: center;
  .col-5{
     position: absolute;
     bottom: .5em;
-    left: 1.5em;
+    left:1.5em;
    
 }
 .col-7{ 
@@ -186,28 +186,45 @@ main{
 } */
 /*generales*//*-----------------------*/
 /* details*//*-----------------------*/
-#containdetails{
-  border: salmon 5px solid;
-  padding: 40px;
+.cardetails1{
+display: inline;
+justify-content: center ;
+align-items: center;
+gap: 500px;
+
 }
 
 #textdetail{
     display: flex;
     justify-content: center;
- 
 }
+
 .card>h1{
     text-align: center;
+}
+#cajadetail{
+   display: flex;
+justify-content: center;
+   background-color: rgba(0, 0, 0, 0.168);
 }
 #imgdetail{
 display: flex;
 justify-content: center;
 
+
 }
 #cardetails{
+    margin: 50px;
     display: flex;
-    justify-content:center;
-    gap: 50px;
+    justify-content: center;
+ 
 
+}
+#logo_details{
+box-shadow: -30px -20px 0px 0px rgba(220, 8, 68, 0.633);
+display: flex;
+justify-content: center;
+height: 100%;
+margin: -10px;
 }
 /* details*//*-----------------------*/
