@@ -207,6 +207,7 @@ gap: 500px;
 
 .card>h1{
     text-align: center;
+    color: rgb(243, 56, 130);
 }
 #cajadetail{
    display: flex;
@@ -219,6 +220,9 @@ justify-content: center;
 
 
 }
+.card>h4{
+    text-align: center;
+}
 #cardetails{
     margin: 50px;
     display: flex;
@@ -227,7 +231,7 @@ justify-content: center;
 
 }
 #logo_details{
-box-shadow: -30px -20px 0px 0px rgba(220, 8, 68, 0.633);
+box-shadow: -22px -10px 0px 0px rgba(220, 8, 68, 0.633);
 display: flex;
 justify-content: center;
 height: 100%;
