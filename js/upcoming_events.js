@@ -12,4 +12,5 @@ eventsFuture.push(event)
  }
 createCheckbox(data.events)
 cargarCardFuture(data)
+cargarCheckbox(data.events)
 buscarSearch(eventsFuture)

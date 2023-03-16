@@ -1,4 +1,4 @@
-/* const queryString = location.search
+const queryString = location.search
 
 const params = new URLSearchParams(queryString)
 
@@ -6,13 +6,15 @@ const id = params.get("id")
 
 const verMas = data.events.find(ver => ver._id == id)
  
-const div = document.querySelector(".cartass") 
-div.innerHTML= `
+let htmlDetails = "" ;
+
+
+htmlDetails = `
 <div class="row" id="cajadetail">
     <div class="cardetails">
         <div class="row" id="cardetails1" >
             <div class="card col-6" id="imgdetail">
-    <img src="${verMas.image}" alt="imagen" id="logo_details">
+            <img src="${verMas.image}" alt="imagen" id="logo_details">
             </div>
             <div class="card col-6" id="textdetail" >
             <h1>${verMas.name}</h1>
@@ -30,6 +32,7 @@ div.innerHTML= `
     </div>
          </div>
 
-` */
+`
+document.querySelector(".cartass").innerHTML = htmlDetails ;
  
  
