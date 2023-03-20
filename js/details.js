@@ -1,15 +1,33 @@
+let verMas ;
+
 const queryString = location.search
 
 const params = new URLSearchParams(queryString)
 
 const id = params.get("id")
 
-const verMas = data.events.find(ver => ver._id == id)
- 
 let htmlDetails = "" ;
 
 
-htmlDetails = `
+
+obtenerDatos();
+async function obtenerDatos() {
+    try {
+        const response = await fetch(urlApi)
+        data = await response.json();
+        console.log(response)
+        verMas = data.events.find(ver => ver._id == id)
+        cargarDetails();
+
+    } catch (error) {
+
+    }
+}
+
+
+
+function cargarDetails(){
+  htmlDetails = `
 <div class="row" id="cajadetail">
     <div class="cardetails">
         <div class="row" id="cardetails1" >
@@ -35,4 +53,7 @@ htmlDetails = `
 `
 document.querySelector(".cartass").innerHTML = htmlDetails ;
  
- 
+}
+
+
+

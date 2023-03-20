@@ -1,3 +1,19 @@
+let urlApi = "https://mindhub-xj03.onrender.com/api/amazing";
+
+let data = [];
+
+obtenerDatos();
+
+async function obtenerDatos(){
+  try {const response = await fetch(urlApi)
+  data = await response.json();
+    console.log(response)
+    
+  } catch (error) {
+    
+  }
+}
+
 let htmlEvents = "";
 
 function cargarCard(eventos) {
@@ -86,12 +102,12 @@ function buscarSearch(eventos) {
 
     let html = "";
 
-    eventoSeleccionado.forEach(evento => { // Filtrar los eventos seleccionados por categoría
+    eventoSeleccionado.forEach(evento => { 
       if ((evento.name.toLowerCase().includes(inputText.value.toLowerCase()) ||
           evento.description.toLowerCase().includes(inputText.value.toLowerCase())) &&
           !tarjetasEncontradas.includes(evento) &&
           categoriaSeleccionada.includes(evento.category)) {
-
+ 
         tarjetasEncontradas.push(evento);
 
         html += `<div class="card col-12 col-md-4 col-xl-3  py-2">
@@ -117,3 +133,4 @@ function buscarSearch(eventos) {
     document.querySelector('.cartass').innerHTML = html;
   });
 }
+
