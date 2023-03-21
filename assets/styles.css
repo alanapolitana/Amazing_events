@@ -172,15 +172,16 @@ body{
     
 }
 .mainstats{
-min-height: 100vh;
+/* min-height: 100vh;
 width: 80%;
 height: 70%;
 margin-left: auto;
 margin-right: auto;
-margin-top: 20px;
-background-color: rgb(127, 185, 255);
-display: block;
-justify-content: space-around;
+margin-top: 20px; */
+
+
+
+
 }
 /* 
 #allStats{
@@ -204,20 +205,22 @@ table, td, th {
     border-collapse: collapse;
 }
 table {
-    margin: 30px auto;
+   /*  margin: 30px auto; */
 }
 td, th {
     padding: 5px 10px;
+    
 }
 th {
+    color: #d02d26;
     background-color: #c6d7e9;
 }
-main{
+/* main{
     min-height: 100vh;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 5em;
-}
+} */
 /* section{
   
 } */

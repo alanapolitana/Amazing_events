@@ -1,3 +1,5 @@
+/* ------------------ASINCRONISMO------------------- */
+
 let urlApi = "https://mindhub-xj03.onrender.com/api/amazing";
 
 let data = [];
@@ -13,6 +15,8 @@ async function obtenerDatos(){
     
   }
 }
+
+/* --------------------CARDS-GENERATE----------------------------- */
 
 let htmlEvents = "";
 
@@ -39,6 +43,9 @@ function cargarCard(eventos) {
   document.querySelector('.cartass').innerHTML = htmlEvents
 };
 
+
+/* ----------------CHECKBOXES-CREATE-!INCLUDES------------------------------- */
+
 let categorias = [];
 function createCheckbox(eventos) {
   eventos.forEach(evento => {
@@ -59,6 +66,9 @@ function createCheckbox(eventos) {
 }
 let eventoSeleccionado = [];
 let categoriaSeleccionada = [];
+
+
+/* ----------------------CHECKBOXES-CARGAR------- */
 
 function cargarCheckbox(eventos) {
   let primitivosChecks = document.querySelectorAll('.checkedd');
@@ -88,6 +98,8 @@ function cargarCheckbox(eventos) {
   });
 }
 
+/*  ------------------------------INPUT-TEXT---------------------------------- */
+
 function buscarSearch(eventos) {
   let buscar = document.querySelector("form button");
 
@@ -100,8 +112,7 @@ function buscarSearch(eventos) {
     let tarjetasEncontradas = [];
 
     eventos.forEach(evento => {
-      if (evento.name.toLowerCase().includes(inputText.value.toLowerCase()) ||
-          evento.description.toLowerCase().includes(inputText.value.toLowerCase())) {
+      if (evento.name.toLowerCase().includes(inputText.value.toLowerCase())) {
 
         if (!tarjetasEncontradas.includes(evento) &&
             (categoriaSeleccionada.length === 0 || categoriaSeleccionada.includes(evento.category))) {
