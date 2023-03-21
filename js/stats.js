@@ -5,18 +5,18 @@
  obtenerDatos();
  
  async function obtenerDatos() {
-     try {
-         const response = await fetch(urlApi)
-         const data = await response.json();
-         console.log(response);
-         cargarCard(data.events)
-         cargarCardFuture(data)
-         loadStats(data.events); // llamamos a la función que genera la tabla de estadísticas de eventos
-     } catch (error) {
-         // Manejo de errores
-     }
- }
- 
+  try {
+      const response = await fetch(urlApi);
+      const data = await response.json();
+      console.log(data); // Comprobamos que la respuesta es la esperada
+      cargarCard(data.events);
+      cargarCardFuture(data);
+      loadStats(data.events);
+  } catch (error) {
+      console.error(error);
+  }
+}
+
  function loadStats(eventos) {
      let tableBodyHTML = "";
      let promedioAsistencia = getpromedioAsistencia(eventos);
