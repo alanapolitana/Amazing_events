@@ -56,9 +56,9 @@ function createCheckbox(eventos) {
 
   let html_check = "";
   categorias.forEach(categoria => {
-    html_check += `
+    html_check += ` <div class=inputAndLabels>
       <input type="checkbox" class="checkedd" name="${categoria}">
-      <label for="">${categoria}</label>
+      <label for="">${categoria}</label></div>
     `;
   });
 

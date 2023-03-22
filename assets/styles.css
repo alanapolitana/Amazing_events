@@ -1,77 +1,93 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-img{max-width: 100%;}
-/*nav*/   /*---------------------------------*/
 
-.nav-link{
+img {
+    max-width: 100%;
+}
+
+/*nav*/
+/*---------------------------------*/
+
+.nav-link {
     border: 2px green;
 }
-.navbar .right{
+
+.navbar .right {
     margin-right: 1em;
 }
 
-.navbar-nav li{
+.navbar-nav li {
     box-shadow: -5px 2px 4px blue;
     border-radius: 10px;
     margin-left: 0.5em;
     margin-right: 0.5em;
 }
+
 .active {
     background-color: aquamarine;
     border-radius: 10px;
 }
-.logo{
+
+.logo {
     width: 10em;
     margin-left: 1em;
 }
 
 
 
-/*nav*//*--------------------------------*/
+/*nav*/
+/*--------------------------------*/
 
-/*"carrousel"*//*---------------------------*/
-#carousel{
+/*"carrousel"*/
+/*---------------------------*/
+#carousel {
     background-color: aquamarine;
 }
-h1{
-text-align: center;
+
+h1 {
+    text-align: center;
 }
-#caright{
+
+#caright {
     display: flex;
     justify-content: right;
 }
-#carleft{
-display: flex;
-}
 
-/*"carrousel"*//*---------------------------*/
-
-
-/*checkbox*//*---------search-------------------*/
-.container-fluid{
-padding-left: 20px; 
-}
-.d-flex{
-background-color: aqua
-}
-/*checkbox*//*----------seacrh------------------*/
-
-
-/*cards*//*------------------------------*/
-.container-past{
+#carleft {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-left: 1em;
-    margin-right: 1em;
-    margin-top: 1em;
-    gap: 1em ;
 }
-.container-upcoming{
+
+/*"carrousel"*/
+/*---------------------------*/
+
+
+/*checkbox*/
+/*---------search-------------------*/
+.container-fluid {
+    padding-left: 20px;
+}
+
+.d-flex {
+    background-color: aqua
+}
+
+.inputAndLabels{
+display: inline;
+
+    border: rgb(114, 223, 250) solid 3px;
+/*     background-color: #d02d26; */
+}
+
+/*checkbox*/
+/*----------seacrh------------------*/
+
+
+/*cards*/
+/*------------------------------*/
+.container-past {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -81,7 +97,8 @@ background-color: aqua
     margin-top: 1em;
     gap: 1em;
 }
-.container-home{
+
+.container-upcoming {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -91,88 +108,119 @@ background-color: aqua
     margin-top: 1em;
     gap: 1em;
 }
-.card{
+
+.container-home {
     display: flex;
-   justify-content: space-between;
-    }
-    .card-img-top{
-    
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 1em;
+    gap: 1em;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-img-top {
+
     box-shadow: 10px 10px 5px lightblue inset;
-    
-    }
-    
-    .card-title{
+
+}
+
+.card-title {
     display: flex;
     position: relative;
-   justify-content: center;
-    }
-    .card-text{
+    justify-content: center;
+}
+
+.card-text {
     display: flex;
     position: relative;
-justify-content: center;
-    }
-    
-     .col-5{
-        display: flex;
-        justify-content: left;
-        position: absolute;
-        justify-content:flex-start;
-       bottom: 0.1em;
-            
-       
-    }
-    .col-7{ 
-        display: flex;
-        position: relative;
-        bottom: 0.5em; 
-        left: 4.8em;
-        justify-content: right;
-         
-     
-       }
-     .col-7>a{
-        box-shadow: 5px 2px lightblue inset;
-    }
-    
-    h3{
-        text-align: center;
-    }
+    justify-content: center;
+}
 
-/*cards*//*------------------------------*/
+.col-5 {
+    display: flex;
+    justify-content: left;
+    position: absolute;
+    justify-content: flex-start;
+    bottom: 0.1em;
 
-/*footer*//*-----------------------------*/
-footer{
-   background-color: aqua;
+
+}
+
+.col-7 {
+    display: flex;
+    position: relative;
+    bottom: 0.5em;
+    left: 4.8em;
+    justify-content: right;
+
+
+}
+
+.col-7>a {
+    box-shadow: 5px 2px lightblue inset;
+}
+
+h3 {
+    text-align: center;
+}
+
+/*cards*/
+/*------------------------------*/
+
+/*footer*/
+/*-----------------------------*/
+footer {
+    flex-direction: row;
+    display: flex;
+    background-color: aqua;
     height: 10vh;
     min-width: 100%;
     position: absolute;
-    
+    padding-bottom: 5em;
 }
-.footright>h3{
-text-align: right;
-}
-.footleft{
-padding-left: 10px;
-}
-.footleft>a{
-margin: 0.7em;
-}
-/*footer*//*-----------------------------*/
-
-
-/*contact*//*---------------------------*/
-.col-auto{
+.footright>h3 {
     text-align: right;
 }
-/*generales*//*-----------------------*/
-body{
+
+.footleft {
+    
+    display: flex;
+}
+
+.footleft>a {
+   margin: 0.7em;
+   display: flex;
+   
+}
+
+/*footer*/
+/*-----------------------------*/
+
+
+/*contact*/
+/*---------------------------*/
+.col-auto {
+    text-align: right;
+}
+
+/*generales*/
+/*-----------------------*/
+body {
     overflow-x: hidden;
     position: relative;
     min-height: 100%;
-    
+
 }
-.mainstats{
-/* min-height: 100vh;
+
+.mainstats {
+    /* min-height: 100vh;
 width: 80%;
 height: 70%;
 margin-left: auto;
@@ -183,6 +231,7 @@ margin-top: 20px; */
 
 
 }
+
 /* 
 #allStats{
     background-color: bisque;
@@ -200,21 +249,28 @@ justify-content: space-around;
    background-color: brown;
    display: flex;
 } */
-table, td, th {
+table,
+td,
+th {
     border: 3px solid #d02d26;
     border-collapse: collapse;
 }
+
 table {
-   /*  margin: 30px auto; */
+    margin: 30px auto;
 }
-td, th {
+
+td,
+th {
     padding: 5px 10px;
-    
+
 }
+
 th {
     color: #d02d26;
     background-color: #c6d7e9;
 }
+
 /* main{
     min-height: 100vh;
     margin-left: auto;
@@ -224,74 +280,82 @@ th {
 /* section{
   
 } */
-/*generales*//*-----------------------*/
-/* details*//*-----------------------*/
-.cardetails1{
-display: block;
-justify-content: center ;
-align-items: center;
-gap: 500px;
+/*generales*/
+/*-----------------------*/
+/* details*/
+/*-----------------------*/
+.cardetails1 {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    gap: 500px;
 
 }
 
-#textdetail{
+#textdetail {
     display: flex;
     justify-content: center;
 }
 
-.card>h1{
+.card>h1 {
     text-align: center;
     color: rgb(243, 56, 130);
 }
-#cajadetail{
-   display: flex;
-justify-content: center;
-   background-color: rgba(0, 0, 0, 0.168);
+
+#cajadetail {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.168);
 }
-#imgdetail{
-display: flex;
-justify-content: center;
+
+#imgdetail {
+    display: flex;
+    justify-content: center;
 
 
 }
-.card>h4{
+
+.card>h4 {
     text-align: center;
 }
-#cardetails{
+
+#cardetails {
     margin: 50px;
     display: flex;
     justify-content: center;
- 
-
-}
-#logo_details{
-box-shadow: -22px -10px 0px 0px rgba(220, 8, 68, 0.633);
-display: flex;
-justify-content: center;
-height: 100%;
-margin: 10px;
-}
-/* details*//*-----------------------*/
-
-/* .checkbox{
-
-
 
 
 }
-@media only screen and (min-width: 320px) and (max-width: 576px){
- .container-home{
-    
 
-}   
+#logo_details {
+    box-shadow: -22px -10px 0px 0px rgba(220, 8, 68, 0.633);
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    margin: 10px;
 }
-   
- */
+
+/* details*/
+/*-----------------------*/
+
+
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+    .checkbox {
+
+        justify-content: space-around;
+        display: block;
+
+
+    }
+
+
+}
+
+
 /*  @media only screen and (min-width: 767px) and (max-width: 1199px){
     .container-home{
        
    
    }   
    }
-    */   
-  
+    */
