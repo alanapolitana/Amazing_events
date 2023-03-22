@@ -76,7 +76,7 @@ h1 {
 
 .inputAndLabels{
 display: inline;
-
+margin-left: 0.5em;
     border: rgb(114, 223, 250) solid 3px;
 /*     background-color: #d02d26; */
 }
@@ -340,14 +340,12 @@ th {
 
 
 @media only screen and (min-width: 320px) and (max-width: 576px) {
-    .checkbox {
-
-        justify-content: space-around;
+    .inputAndLabels{
         display: block;
-
-
-    }
-
+        
+            border: rgb(114, 223, 250) solid 3px;
+        /*     background-color: #d02d26; */
+        }
 
 }
 
