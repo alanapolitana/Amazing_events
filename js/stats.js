@@ -91,7 +91,7 @@ function crearTabla() {
 <th scope="row" colspan="3" class="table-warning border-dark">Past events statistics by category</th>
 </tr>
 <tr>
-<th>Categories</th>
+<th>Categories</th> 
 <th>Revenue </th>
 <th>Percentage of attendance</th>
 </tr>

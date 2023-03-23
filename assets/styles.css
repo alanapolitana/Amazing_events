@@ -76,12 +76,13 @@ h1 {
 
 .inputAndLabels{
 display: inline;
-margin-left: 0.5em;
+
     border: rgb(114, 223, 250) solid 3px;
 /*     background-color: #d02d26; */
 }
 
 /*checkbox*/
+
 /*----------seacrh------------------*/
 
 
@@ -148,7 +149,7 @@ margin-left: 0.5em;
     justify-content: left;
     position: absolute;
     justify-content: flex-start;
-    bottom: 0.1em;
+    bottom: 0.1em; 
 
 
 }
@@ -227,11 +228,6 @@ margin-left: auto;
 margin-right: auto;
 margin-top: 20px; */
 
-
-
-
-}
-
 /* 
 #allStats{
     background-color: bisque;
@@ -249,6 +245,11 @@ justify-content: space-around;
    background-color: brown;
    display: flex;
 } */
+
+
+}
+
+
 table,
 td,
 th {
